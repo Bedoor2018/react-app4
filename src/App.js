@@ -4,21 +4,27 @@ import {Routes, Route, Link} from 'react-router-dom';
 
 const Nav=()=>{
   return(
-   <header id="header" className="fixed-top d-flex align-items-center header-transparent">
+ <header id="header" className="fixed-top d-flex align-items-center">
   <div className="container d-flex justify-content-between align-items-center">
-    
+    <div className="logo">
+      <h1 className="text-light"><a href="index.html"><span>Moderna</span></a></h1>
+      {/* Uncomment below if you prefer to use an image logo */}
+      {/* <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*/}
+    </div>
     <nav id="navbar" className="navbar">
       <ul>
-        <li><Link className="active" to="/">Home</Link></li>
+      <li><Link className="active" to="/">Home</Link></li>
         <li><Link to="/About">About</Link></li>
         <li><Link to="/Services">Services</Link></li>
         <li><Link to="/Team">Team</Link></li>
         <li><Link to="/Contact-us">Contact Us</Link></li>
       </ul>
       <i className="bi bi-list mobile-nav-toggle" />
-    </nav>
+    </nav>{/* .navbar */}
   </div>
 </header>
+
+
   )
 };
 const Footear=()=>{
@@ -84,21 +90,7 @@ return(<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data
       </div>
     </div>
   </div>
-  <div className="container">
-    <div className="copyright">
-      © Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
-    </div>
-    <div className="credits">
-      {/* All the links in the footer should remain intact. */}
-      {/* You can delete the links only if you purchased the pro version. */}
-      {/* Licensing information: https://bootstrapmade.com/license/ */}
-      {/* Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ */}
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-    </div>
-  </div>
 </footer>
-
-
 )
 };
 const Home=()=>{
@@ -180,7 +172,7 @@ const Home=()=>{
       <div className="container">
         <div className="row">
           <div className="col-lg-6 video-box">
-            <img src="assets/img/why-us.jpg" className="img-fluid" alt />
+            <img src="img/why-us.jpg" className="img-fluid" alt />
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" />
           </div>
           <div className="col-lg-6 d-flex flex-column justify-content-center p-5">
@@ -207,7 +199,7 @@ const Home=()=>{
         </div>
         <div className="row" data-aos="fade-up">
           <div className="col-md-5">
-            <img src="assets/img/features-1.svg" className="img-fluid" alt />
+            <img src="img/features-1.svg" className="img-fluid" alt />
           </div>
           <div className="col-md-7 pt-4">
             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -223,7 +215,7 @@ const Home=()=>{
         </div>
         <div className="row" data-aos="fade-up">
           <div className="col-md-5 order-1 order-md-2">
-            <img src="assets/img/features-2.svg" className="img-fluid" alt />
+            <img src="img/features-2.svg" className="img-fluid" alt />
           </div>
           <div className="col-md-7 pt-5 order-2 order-md-1">
             <h3>Corporis temporibus maiores provident</h3>
@@ -240,7 +232,7 @@ const Home=()=>{
         </div>
         <div className="row" data-aos="fade-up">
           <div className="col-md-5">
-            <img src="assets/img/features-3.svg" className="img-fluid" alt />
+            <img src="img/features-3.svg" className="img-fluid" alt />
           </div>
           <div className="col-md-7 pt-5">
             <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
@@ -254,7 +246,7 @@ const Home=()=>{
         </div>
         <div className="row" data-aos="fade-up">
           <div className="col-md-5 order-1 order-md-2">
-            <img src="assets/img/features-4.svg" className="img-fluid" alt />
+            <img src="img/features-4.svg" className="img-fluid" alt />
           </div>
           <div className="col-md-7 pt-5 order-2 order-md-1">
             <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
@@ -284,7 +276,7 @@ const Aboutus=()=>{
       <div className="d-flex justify-content-between align-items-center">
         <h2>About Us</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+          <li><Link to="/">Home</Link></li>
           <li>About Us</li>
         </ol>
       </div>
@@ -295,7 +287,7 @@ const Aboutus=()=>{
     <div className="container">
       <div className="row">
         <div className="col-lg-6">
-          <img src="assets/img/about.jpg" className="img-fluid" alt />
+          <img src="img/about.jpg" className="img-fluid" alt />
         </div>
         <div className="col-lg-6 pt-4 pt-lg-0">
           <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -381,7 +373,7 @@ const Aboutus=()=>{
       <div className="testimonials-carousel swiper">
         <div className="swiper-wrapper">
           <div className="testimonial-item swiper-slide">
-            <img src="assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt />
+            <img src="img/testimonials/testimonials-1.jpg" className="testimonial-img" alt />
             <h3>Saul Goodman</h3>
             <h4>Ceo &amp; Founder</h4>
             <p>
@@ -391,7 +383,7 @@ const Aboutus=()=>{
             </p>
           </div>
           <div className="testimonial-item swiper-slide">
-            <img src="assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt />
+            <img src="img/testimonials/testimonials-2.jpg" className="testimonial-img" alt />
             <h3>Sara Wilsson</h3>
             <h4>Designer</h4>
             <p>
@@ -401,7 +393,7 @@ const Aboutus=()=>{
             </p>
           </div>
           <div className="testimonial-item swiper-slide">
-            <img src="assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt />
+            <img src="img/testimonials/testimonials-3.jpg" className="testimonial-img" alt />
             <h3>Jena Karlis</h3>
             <h4>Store Owner</h4>
             <p>
@@ -411,7 +403,7 @@ const Aboutus=()=>{
             </p>
           </div>
           <div className="testimonial-item swiper-slide">
-            <img src="assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt />
+            <img src="img/testimonials/testimonials-4.jpg" className="testimonial-img" alt />
             <h3>Matt Brandon</h3>
             <h4>Freelancer</h4>
             <p>
@@ -421,7 +413,7 @@ const Aboutus=()=>{
             </p>
           </div>
           <div className="testimonial-item swiper-slide">
-            <img src="assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt />
+            <img src="img/testimonials/testimonials-5.jpg" className="testimonial-img" alt />
             <h3>John Larson</h3>
             <h4>Entrepreneur</h4>
             <p>
@@ -436,9 +428,7 @@ const Aboutus=()=>{
     </div>
   </section>{/* End Ttstimonials Section */}
 </main>
-
-
-  )
+ )
 };
 const Services=()=>{
   return(
@@ -450,7 +440,7 @@ const Services=()=>{
       <div className="d-flex justify-content-between align-items-center">
         <h2>Our Services</h2>
         <ol>
-          <li><a href="index.html">Home</a></li>
+        <li><Link to="/">Home</Link></li>
           <li>Our Services</li>
         </ol>
       </div>
@@ -496,7 +486,7 @@ const Services=()=>{
     <div className="container">
       <div className="row">
         <div className="col-lg-6 video-box">
-          <img src="assets/img/why-us.jpg" className="img-fluid" alt />
+          <img src="img/why-us.jpg" className="img-fluid" alt />
           <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" />
         </div>
         <div className="col-lg-6 d-flex flex-column justify-content-center p-5">
@@ -521,7 +511,7 @@ const Services=()=>{
         <div className="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
           <div className="card">
             <div className="card-img">
-              <img src="assets/img/service-details-1.jpg" alt="..." />
+              <img src="img/service-details-1.jpg" alt="..." />
             </div>
             <div className="card-body">
               <h5 className="card-title"><a href="#">Our Mission</a></h5>
@@ -533,7 +523,7 @@ const Services=()=>{
         <div className="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
           <div className="card">
             <div className="card-img">
-              <img src="assets/img/service-details-2.jpg" alt="..." />
+              <img src="img/service-details-2.jpg" alt="..." />
             </div>
             <div className="card-body">
               <h5 className="card-title"><a href="#">Our Plan</a></h5>
@@ -545,7 +535,7 @@ const Services=()=>{
         <div className="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
           <div className="card">
             <div className="card-img">
-              <img src="assets/img/service-details-3.jpg" alt="..." />
+              <img src="img/service-details-3.jpg" alt="..." />
             </div>
             <div className="card-body">
               <h5 className="card-title"><a href="#">Our Vision</a></h5>
@@ -557,7 +547,7 @@ const Services=()=>{
         <div className="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
           <div className="card">
             <div className="card-img">
-              <img src="assets/img/service-details-4.jpg" alt="..." />
+              <img src="img/service-details-4.jpg" alt="..." />
             </div>
             <div className="card-body">
               <h5 className="card-title"><a href="#">Our Care</a></h5>
@@ -630,7 +620,7 @@ const Team=()=>{
         <div className="d-flex justify-content-between align-items-center">
           <h2>Our Team</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+          <li><Link to="/">Home</Link></li>
             <li>Our Team</li>
           </ol>
         </div>
@@ -643,7 +633,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="assets/img/team/team-1.jpg" className="img-fluid" alt />
+                <img src="img/team/team-1.jpg" className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -661,7 +651,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="assets/img/team/team-2.jpg" className="img-fluid" alt />
+                <img src="img/team/team-2.jpg" className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -679,7 +669,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="assets/img/team/team-3.jpg" className="img-fluid" alt />
+                <img src="img/team/team-3.jpg" className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -697,7 +687,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="assets/img/team/team-4.jpg" className="img-fluid" alt />
+                <img src="img/team/team-4.jpg" className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -715,7 +705,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="assets/img/team/team-5.jpg" className="img-fluid" alt />
+                <img src="img/team/team-5.jpg" className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -733,7 +723,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="assets/img/team/team-6.jpg" className="img-fluid" alt />
+                <img src="img/team/team-6.jpg" className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -763,7 +753,7 @@ const Contactus=()=>{
         <div className="d-flex justify-content-between align-items-center">
           <h2>Contact</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
+          <li><Link to="/">Home</Link></li>
             <li>Contact</li>
           </ol>
         </div>
