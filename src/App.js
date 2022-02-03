@@ -1,5 +1,23 @@
 import './App.css';
 import React from 'react';
+import imgH1 from './img/features-1.svg';
+import imgH2 from './img/features-2.svg';
+import imgH3 from './img/features-3.svg';
+import imgH4 from './img/features-4.svg';
+import imgA1 from './img/about.jpg';
+import imgA2 from './img/testimonials/testimonials-1.jpg';
+import imgA3 from './img/testimonials/testimonials-2.jpg';
+import imgA4 from './img/testimonials/testimonials-3.jpg';
+import imgA5 from './img/testimonials/testimonials-4.jpg';
+import imgA6 from './img/testimonials/testimonials-5.jpg';
+import img33 from './img/why-us.jpg';
+import imgT1 from './img/team/team-1.jpg';
+import imgT2 from './img/team/team-2.jpg';
+import imgT3 from './img/team/team-3.jpg';
+import imgT4 from './img/team/team-4.jpg';
+import imgT5 from './img/team/team-5.jpg';
+import imgT6 from './img/team/team-6.jpg';
+
 import {Routes, Route, Link} from 'react-router-dom';
 
 const Nav=()=>{
@@ -14,10 +32,10 @@ const Nav=()=>{
     <nav id="navbar" className="navbar">
       <ul>
       <li><Link className="active" to="/">Home</Link></li>
-        <li><Link to="/About">About</Link></li>
+        <li><Link to="/About">About us</Link></li>
         <li><Link to="/Services">Services</Link></li>
         <li><Link to="/Team">Team</Link></li>
-        <li><Link to="/Contact-us">Contact Us</Link></li>
+        <li><Link to="/Contact-us">Contact us</Link></li>
       </ul>
       <i className="bi bi-list mobile-nav-toggle" />
     </nav>{/* .navbar */}
@@ -172,7 +190,7 @@ const Home=()=>{
       <div className="container">
         <div className="row">
           <div className="col-lg-6 video-box">
-            <img src="img/why-us.jpg" className="img-fluid" alt />
+            <img src={img33}className="img-fluid" alt />
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" />
           </div>
           <div className="col-lg-6 d-flex flex-column justify-content-center p-5">
@@ -199,7 +217,7 @@ const Home=()=>{
         </div>
         <div className="row" data-aos="fade-up">
           <div className="col-md-5">
-            <img src="img/features-1.svg" className="img-fluid" alt />
+            <img src={imgH1} className="img-fluid" alt />
           </div>
           <div className="col-md-7 pt-4">
             <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -215,7 +233,7 @@ const Home=()=>{
         </div>
         <div className="row" data-aos="fade-up">
           <div className="col-md-5 order-1 order-md-2">
-            <img src="img/features-2.svg" className="img-fluid" alt />
+            <img src={imgH2}className="img-fluid" alt />
           </div>
           <div className="col-md-7 pt-5 order-2 order-md-1">
             <h3>Corporis temporibus maiores provident</h3>
@@ -232,7 +250,7 @@ const Home=()=>{
         </div>
         <div className="row" data-aos="fade-up">
           <div className="col-md-5">
-            <img src="img/features-3.svg" className="img-fluid" alt />
+            <img src={imgH3} className="img-fluid" alt />
           </div>
           <div className="col-md-7 pt-5">
             <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
@@ -246,7 +264,7 @@ const Home=()=>{
         </div>
         <div className="row" data-aos="fade-up">
           <div className="col-md-5 order-1 order-md-2">
-            <img src="img/features-4.svg" className="img-fluid" alt />
+            <img src={imgH4} className="img-fluid" alt />
           </div>
           <div className="col-md-7 pt-5 order-2 order-md-1">
             <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
@@ -287,7 +305,7 @@ const Aboutus=()=>{
     <div className="container">
       <div className="row">
         <div className="col-lg-6">
-          <img src="img/about.jpg" className="img-fluid" alt />
+          <img src={imgA1} className="img-fluid" alt />
         </div>
         <div className="col-lg-6 pt-4 pt-lg-0">
           <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -314,56 +332,25 @@ const Aboutus=()=>{
     <div className="container">
       <div className="row counters">
         <div className="col-lg-3 col-6 text-center">
-          <span data-purecounter-start={0} data-purecounter-end={232} data-purecounter-duration={1} className="purecounter" />
+          <span className="purecounter" >232</span>
           <p>Clients</p>
         </div>
         <div className="col-lg-3 col-6 text-center">
-          <span data-purecounter-start={0} data-purecounter-end={521} data-purecounter-duration={1} className="purecounter" />
+          <span className="purecounter" >521</span>
           <p>Projects</p>
         </div>
         <div className="col-lg-3 col-6 text-center">
-          <span data-purecounter-start={0} data-purecounter-end={1463} data-purecounter-duration={1} className="purecounter" />
+          <span className="purecounter" >1463</span>
           <p>Hours Of Support</p>
         </div>
         <div className="col-lg-3 col-6 text-center">
-          <span data-purecounter-start={0} data-purecounter-end={15} data-purecounter-duration={1} className="purecounter" />
+          <span className="purecounter" >15</span>
           <p>Hard Workers</p>
         </div>
       </div>
     </div>
   </section>{/* End Facts Section */}
   {/* ======= Our Skills Section ======= */}
-  <section className="skills" data-aos="fade-up">
-    <div className="container">
-      <div className="section-title">
-        <h2>Our Skills</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div>
-      <div className="skills-content">
-        <div className="progress">
-          <div className="progress-bar bg-success" role="progressbar" aria-valuenow={100} aria-valuemin={0} aria-valuemax={100}>
-            <span className="skill">HTML <i className="val">100%</i></span>
-          </div>
-        </div>
-        <div className="progress">
-          <div className="progress-bar bg-info" role="progressbar" aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>
-            <span className="skill">CSS <i className="val">90%</i></span>
-          </div>
-        </div>
-        <div className="progress">
-          <div className="progress-bar bg-warning" role="progressbar" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>
-            <span className="skill">JavaScript <i className="val">75%</i></span>
-          </div>
-        </div>
-        <div className="progress">
-          <div className="progress-bar bg-danger" role="progressbar" aria-valuenow={55} aria-valuemin={0} aria-valuemax={100}>
-            <span className="skill">Photoshop <i className="val">55%</i></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>{/* End Our Skills Section */}
-  {/* ======= Tetstimonials Section ======= */}
   <section className="testimonials" data-aos="fade-up">
     <div className="container">
       <div className="section-title">
@@ -373,7 +360,7 @@ const Aboutus=()=>{
       <div className="testimonials-carousel swiper">
         <div className="swiper-wrapper">
           <div className="testimonial-item swiper-slide">
-            <img src="img/testimonials/testimonials-1.jpg" className="testimonial-img" alt />
+            <img src={imgA2} className="testimonial-img" alt />
             <h3>Saul Goodman</h3>
             <h4>Ceo &amp; Founder</h4>
             <p>
@@ -383,7 +370,7 @@ const Aboutus=()=>{
             </p>
           </div>
           <div className="testimonial-item swiper-slide">
-            <img src="img/testimonials/testimonials-2.jpg" className="testimonial-img" alt />
+            <img src={imgA3} className="testimonial-img" alt />
             <h3>Sara Wilsson</h3>
             <h4>Designer</h4>
             <p>
@@ -393,7 +380,7 @@ const Aboutus=()=>{
             </p>
           </div>
           <div className="testimonial-item swiper-slide">
-            <img src="img/testimonials/testimonials-3.jpg" className="testimonial-img" alt />
+            <img src={imgA4} className="testimonial-img" alt />
             <h3>Jena Karlis</h3>
             <h4>Store Owner</h4>
             <p>
@@ -403,7 +390,7 @@ const Aboutus=()=>{
             </p>
           </div>
           <div className="testimonial-item swiper-slide">
-            <img src="img/testimonials/testimonials-4.jpg" className="testimonial-img" alt />
+            <img src={imgA5} className="testimonial-img" alt />
             <h3>Matt Brandon</h3>
             <h4>Freelancer</h4>
             <p>
@@ -413,7 +400,7 @@ const Aboutus=()=>{
             </p>
           </div>
           <div className="testimonial-item swiper-slide">
-            <img src="img/testimonials/testimonials-5.jpg" className="testimonial-img" alt />
+            <img src={imgA6}className="testimonial-img" alt />
             <h3>John Larson</h3>
             <h4>Entrepreneur</h4>
             <p>
@@ -486,7 +473,7 @@ const Services=()=>{
     <div className="container">
       <div className="row">
         <div className="col-lg-6 video-box">
-          <img src="img/why-us.jpg" className="img-fluid" alt />
+          <img src={img33} className="img-fluid" alt />
           <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" className="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true" />
         </div>
         <div className="col-lg-6 d-flex flex-column justify-content-center p-5">
@@ -633,7 +620,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="img/team/team-1.jpg" className="img-fluid" alt />
+                <img src={imgT1} className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -651,7 +638,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="img/team/team-2.jpg" className="img-fluid" alt />
+                <img src={imgT2} className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -669,7 +656,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="img/team/team-3.jpg" className="img-fluid" alt />
+                <img src={imgT3} className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -687,7 +674,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="img/team/team-4.jpg" className="img-fluid" alt />
+                <img src={imgT4} className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -705,7 +692,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="img/team/team-5.jpg" className="img-fluid" alt />
+                <img src={imgT5} className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -723,7 +710,7 @@ const Team=()=>{
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div className="member">
               <div className="member-img">
-                <img src="img/team/team-6.jpg" className="img-fluid" alt />
+                <img src={imgT6} className="img-fluid" alt />
                 <div className="social">
                   <a href><i className="bi bi-twitter" /></a>
                   <a href><i className="bi bi-facebook" /></a>
@@ -763,32 +750,7 @@ const Contactus=()=>{
     <section className="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration={500}>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="info-box">
-                  <i className="bx bx-map" />
-                  <h3>Our Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="info-box">
-                  <i className="bx bx-envelope" />
-                  <h3>Email Us</h3>
-                  <p>info@example.com<br />contact@example.com</p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="info-box">
-                  <i className="bx bx-phone-call" />
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55<br />+1 6678 254445 41</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6">
+          <div className="col-lg-12">
             <form action="forms/contact.php" method="post" role="form" className="php-email-form">
               <div className="row">
                 <div className="col-md-6 form-group">
@@ -816,11 +778,7 @@ const Contactus=()=>{
       </div>
     </section>{/* End Contact Section */}
     {/* ======= Map Section ======= */}
-    <section className="map mt-2">
-      <div className="container-fluid p-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sbg!4v1579767901424!5m2!1sen!2sbg" frameBorder={0} style={{border: 0}} allowFullScreen />
-      </div>
-    </section>{/* End Map Section */}
+  
   </main>
   )
 };
